@@ -1,0 +1,64 @@
+.heroImg {
+    display: flex; 
+    padding: 2em 2em 1em;
+    width: 100%;
+    background: var(--bg-email);
+  }
+  
+  .heroDesc {
+    padding: 1em 2em;
+  }
+  
+  .heroDesc > h1 {
+    margin: 0;
+    font-size: 25px;
+    line-height: 1.5em;
+  }
+  
+  .heroDesc > p {
+    font-family: var(--font-body);
+    line-height: 1.5em;
+  }
+  
+  .heroDesc > .cta {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    color: inherit;
+    background: linear-gradient(to right, var(--cyan), var(--blue));
+    padding: 1em 6em;
+    margin: 1em;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+  }
+  
+  .heroDesc > .cta:hover {
+    background: var(--blue);
+    box-shadow: 0 0 6px 0 var(--cyan);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .heroDesc > .cta:active {
+    color: var(--bg-main);
+    transition: color 0.1s ease-in-out;
+  }
+  @media screen and (width >= 680px) {
+    .heroImg {
+      width: 50%;
+      margin: auto;
+      background-color: inherit;
+    }
+  
+    .heroDesc {
+      width: 50%;
+      margin: auto;
+      padding: 0;
+    }
+  
+    .heroDesc > p {
+      margin: 1em 3em;
+    }
+  }
+  
+  

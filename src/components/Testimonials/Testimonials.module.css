@@ -1,0 +1,81 @@
+.testim {
+    padding: 1.5em;
+    background: var(--bg-testimonial);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px var(--bg-testimonial);
+  }
+  
+  .testimQuote {
+    font-size: 0.7em;
+    padding-bottom: 1em;
+    margin: 0;
+    line-height: 1.75em;
+  }
+  
+  .testimProfile {
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    grid-template-rows: repeat(2, 1em);
+    align-items: center;
+  }
+  
+  .testimPicture {
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    margin: 0;
+    grid-area: 1 / 1 / 3 / 2;
+  }
+  
+  .testimCustomer {
+    font-size: 0.5em;
+    margin: 0;
+  }
+  
+  .testimPosition {
+    font-size: 0.25em;
+    margin: 0;
+  }
+  @media screen and (width >= 680px) {
+    .testimWrapper {
+      flex-direction: row;
+      padding: 6em;
+      gap: 2em;
+      position: relative;
+    }
+    .testim {
+      padding-top: 2.5em;
+    }
+    .testimQuote {
+      padding-bottom: 2em;
+    }
+  
+    .testimCustomer {
+      font-size: xx-small;
+    }
+  
+    .testimPosition {
+      font-size: 0.4em;
+    }
+  }
+
+  @media screen and (width >= 1440px) {
+    .testimWrapper {
+      flex-direction: row;
+      padding: 8em 10em;
+      gap: 2em;
+      position: relative;
+    }
+    .testimQuote {
+      font-size: medium;
+    }
+    .testimCustomer {
+      font-size: small;
+    }
+  
+    .testimPosition {
+      font-size: x-small;
+    }
+
+  }
+  

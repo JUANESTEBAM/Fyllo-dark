@@ -1,0 +1,91 @@
+.featureWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 6em 2em;
+    text-align: center;
+    line-height: 1.5em;
+    row-gap: 5em;
+  }
+  
+  .featIcon {
+    height: 6em;
+    padding: 1em;
+  }
+  
+  .featHeading {
+    font-size: large;
+    margin: 0;
+    padding: 0.5em;
+  }
+  
+  .featBody {
+    font-size: 14px;
+    margin: 0;
+    font-family: var(--font-body);
+  }
+.featureWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5em;
+    gap: 5em;
+  }
+
+  .featIcon {
+    height: 7em;
+  }
+
+  .featHeading {
+    font-size: larger;
+  }
+
+  .featBody {
+    font-size: medium;
+  }
+@media screen and (width >= 680px) {
+  .featureWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5em;
+    gap: 5em;
+  }
+
+  .featIcon {
+    height: 7em;
+  }
+
+  .featHeading {
+    font-size: larger;
+  }
+
+  .featBody {
+    font-size: medium;
+  }
+  .quote-icon {
+    position: absolute;
+    width: auto;
+    inset: 4em 5.5em;
+    padding: 0;
+    z-index: -1;
+  }
+  .error {
+    font-size: small;
+  }
+}
+@media screen and (width >= 1440px) {
+  .featureWrapper {
+    padding: 5em 25em;
+    column-gap: 12em;
+    row-gap: 6em;
+  }
+  .quote-icon {
+    position: absolute;
+    width: auto;
+    inset: 5.75em 9.5em;
+    padding: 0;
+    z-index: -1;
+  }
+  .error {
+    font-size: medium;
+  }
+}

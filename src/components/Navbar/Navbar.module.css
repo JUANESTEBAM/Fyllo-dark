@@ -1,0 +1,55 @@
+.nav {
+  padding: 1.5em;
+  background: var(--bg-email);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logoLink {
+  width: 6em;
+}
+
+.logo {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  column-gap: 1em;
+}
+
+.navbar > li {
+  list-style: none;
+  font-size: 1em;
+}
+
+.navbar > li:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.navbar > li:active {
+  color: var(--blue);
+  transition: color 0.1s ease-in-out;
+}
+@media screen and (width >= 680px) {
+  .logoLink {
+    width: 10em;
+  }
+  .nav {
+    padding: 5em 5em 2em;
+  }
+  .navbar {
+    column-gap: 3em;
+  }
+
+  .navbar > li {
+    font-size: 1.5em;
+  }
+  
+}

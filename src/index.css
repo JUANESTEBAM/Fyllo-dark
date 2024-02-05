@@ -1,0 +1,311 @@
+:root {
+  --bg-email: hsl(217, 28%, 15%);
+  --bg-main: hsl(218, 28%, 13%);
+  --bg-footer: hsl(216, 53%, 9%);
+  --bg-testimonial: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --font-heading: "Raleway", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  color: var(--white);
+  font-family: var(--font-heading);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.heroDesc > .cta:hover {
+  background: var(--blue);
+  box-shadow: 0 0 6px 0 var(--cyan);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.heroDesc > .cta:active {
+  color: var(--bg-main);
+  transition: color 0.1s ease-in-out;
+}
+
+.featureWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 6em 2em;
+  text-align: center;
+  line-height: 1.5em;
+  row-gap: 5em;
+}
+
+.featIcon {
+  height: 6em;
+  padding: 1em;
+}
+
+.featHeading {
+  font-size: large;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.featBody {
+  font-size: 14px;
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+  line-height: 1.5em;
+  row-gap: 2em;
+  font-family: var(--font-body);
+}
+
+.infoImg {
+  padding: 0;
+  width: 100%;
+}
+
+.infoHeading {
+  font-size: large;
+  margin: 0;
+  padding: 0.5em 0 0.5em 0.25em;
+  font-family: var(--font-heading);
+}
+
+.infoBody {
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+.infoMore {
+  font-size: 0.75em;
+  color: var(--cyan);
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  padding: 0.5em 0;
+}
+
+.infoMore:hover {
+  color: var(--blue);
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 6em 3em;
+  gap: 1.5em;
+  font-family: var(--font-body);
+}
+
+.quote-icon {
+  height: min-content;
+  width: 1.75em;
+  position: relative;
+  bottom: -1.5em;
+  padding-left: 0.25em;
+}
+
+.testim {
+  padding: 1.5em;
+  background: var(--bg-testimonial);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px var(--bg-testimonial);
+}
+
+.testimQuote {
+  font-size: 0.7em;
+  padding-bottom: 1em;
+  margin: 0;
+  line-height: 1.75em;
+}
+
+.testimProfile {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  grid-template-rows: repeat(2, 1em);
+  align-items: center;
+}
+
+.testimPicture {
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  margin: 0;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.testimCustomer {
+  font-size: 0.5em;
+  margin: 0;
+}
+
+.testimPosition {
+  font-size: 0.25em;
+  margin: 0;
+}
+
+.signupWrapper {
+  display: grid;
+  background-color: var(--bg-email);
+  margin: 4em 2em;
+  padding: 2em 2em;
+  line-height: 1.25em;
+  border-radius: 10px;
+  font-family: var(--font-body);
+}
+
+.signupDesc {
+  text-align: center;
+}
+
+.signupHeader {
+  font-size: 1.1em;
+  font-family: var(--font-heading);
+}
+
+.signupBody {
+  font-size: smaller;
+}
+
+.signupEmail {
+  border: none;
+  border-radius: 25px;
+  padding: 1em;
+  margin: 1em 0;
+  font-size: 14px;
+  background-color: var(--white);
+  font-family: inherit;
+}
+
+.signupEmail::placeholder {
+  font-size: 0.65em;
+  color: lightgray;
+  padding: 0 1.5em;
+}
+
+.signupBtn {
+  border: none;
+  border-radius: 25px;
+  padding: 1.2em;
+  margin: 1em 0;
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  color: inherit;
+  font-family: inherit;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  cursor: pointer;
+}
+
+.signupBtn:hover {
+  background: var(--cyan);
+  box-shadow: 0 0 6px 0 var(--blue);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.signupBtn:active {
+  color: var(--bg-email);
+  transition: color 0.1s ease-in-out;
+}
+
+.footer {
+  background: var(--bg-footer);
+  padding: 4em 2em 3em;
+  font-family: var(--font-body);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.logoImg {
+  margin: 0 0 2em 0.5em;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1.5em;
+  margin: 1.25em 0;
+}
+
+.footerIcon {
+  height: 1em;
+}
+
+.addressTxt {
+  font-size: 1.05em;
+}
+
+.contactTxt {
+  font-size: 0.9em;
+}
+
+.footerContact {
+  margin-bottom: 5em;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  margin-bottom: 3em;
+}
+
+.footerLinks > a:hover {
+  font-weight: 700;
+}
+
+.footerLinks > a:active {
+  color: var(--blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.footerSocials {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+  padding: 1em 0 0;
+  justify-content: center;
+}
+
+.social:hover {
+  color: var(--cyan);
+  transition: color 0.3s ease-in-out;
+}
+
+.social:active {
+  color: var(--blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.error {
+  color: var(--light-red);
+  font-size: smaller;
+  margin: 0;
+}
+
+@media screen and (width >= 680px) {
+  main {
+    background: var(--bg-email);
+    padding-bottom: 5em;
+  }
+}
